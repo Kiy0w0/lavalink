@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MyLavalink Manager
 
-## Getting Started
+A web-based dashboard for managing and configuring [Lavalink](https://github.com/lavalink-devs/Lavalink) audio servers. This project provides a user-friendly interface to download, configure, and learn about running your own Lavalink instance.
 
-First, run the development server:
+## Features
+
+- 📱 Modern, responsive interface
+- 📖 Comprehensive documentation
+- 🔧 Configuration file templates
+- 📦 Startup script templates
+- 🔌 Plugin showcase and resources
+- 🚀 Ready to deploy on Vercel
+
+## About Lavalink
+
+Lavalink is a standalone audio sending node based on Lavaplayer and Koe. It allows for sending audio without it ever reaching any of your Discord bot shards. This makes music playback more stable and reduces the CPU/memory footprint of your bot.
+
+## Important Note
+
+This dashboard is designed to help you manage a Lavalink server, but Lavalink itself **cannot** run on Vercel or similar serverless platforms. The actual Lavalink server requires a proper VPS or dedicated server with Java installed.
+
+This dashboard helps you:
+1. Download the necessary Lavalink files
+2. Get configuration templates
+3. Get startup script templates
+4. Learn how to use Lavalink
+5. Discover plugins and resources
+
+## Development
+
+This project is built with Next.js and can be run locally for development:
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can deploy this project to Vercel with just a few clicks. The included `vercel.json` configuration ensures proper handling of downloadable files.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyourusername%2Fmylavalink-ui)
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Acknowledgements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Lavalink Developers](https://github.com/lavalink-devs) for creating Lavalink
+- The various plugin developers who extend Lavalink's functionality

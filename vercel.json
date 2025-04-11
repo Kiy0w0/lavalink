@@ -1,0 +1,30 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "outputDirectory": ".next",
+  "routes": [
+    {
+      "src": "/application.yml",
+      "headers": {
+        "Content-Type": "text/plain",
+        "Content-Disposition": "attachment; filename=application.yml"
+      }
+    },
+    {
+      "src": "/start.sh",
+      "headers": {
+        "Content-Type": "text/plain",
+        "Content-Disposition": "attachment; filename=start.sh"
+      }
+    },
+    {
+      "src": "/start.bat",
+      "headers": {
+        "Content-Type": "text/plain",
+        "Content-Disposition": "attachment; filename=start.bat"
+      }
+    }
+  ]
+} 
